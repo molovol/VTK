@@ -1,0 +1,22 @@
+﻿{
+    "configurations": [
+        {
+            "name": "x64-Release-MT",
+            "generator": "Ninja",
+            "configurationType": "Release",
+            "buildRoot": "${projectDir}\\out\\build\\${name}",
+            "installRoot": "${projectDir}\\out\\install\\${name}",
+            "cmakeCommandArgs": "-DCMAKE_MSVC_RUNTIME_LIBRARY=\"MultiThreaded$<$<CONFIG:Debug>:Debug>\"",
+            "buildCommandArgs": "",
+            "ctestCommandArgs": "",
+            "inheritEnvironments": [ "msvc_x64_x64" ],
+            "variables": [
+                {
+                    "name": "BUILD_SHARED_LIBS",
+                    "value": "False",
+                    "type": "BOOL"
+                }
+            ]
+        }
+    ]
+}
